@@ -1,0 +1,20 @@
+title: Capsailer
+description: A CLI tool for delivering Kubernetes applications into air-gapped (offline) environments
+url: https://capsailer.dev
+baseurl: ""
+github_username: capsailer
+github_repo: capsailer-cli
+repo_url: https://github.com/capsailer/capsailer-cli
+docs_url: https://docs.capsailer.dev
+
+# Build settings
+markdown: kramdown
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Theme settings
+show_downloads: true
+ 

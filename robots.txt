@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Temporarily block all search engines until the site is ready
+# Remove these lines when you're ready to be indexed
+
+Sitemap: https://capsailer.dev/sitemap.xml 

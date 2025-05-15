@@ -1,0 +1,260 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+
+// Modern variables
+$primary: #3CB371;
+$dark: #121F3D;
+$light: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-600: #6c757d;
+$gray-800: #343a40;
+
+// Base styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: $light;
+  background: linear-gradient(135deg, $dark, darken($primary, 20%));
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Modern navbar
+.navbar {
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba($dark, 0.2);
+  backdrop-filter: blur(10px);
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    
+    .navbar-logo {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    .nav-link {
+      color: rgba($light, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 0;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $light;
+      }
+
+      &.nav-link-github {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        background: rgba($light, 0.1);
+
+        &:hover {
+          background: rgba($light, 0.15);
+        }
+
+        svg {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+// Main content
+.main-content {
+  padding-top: 6rem;
+  min-height: calc(100vh - 12rem);
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 2rem 0;
+    color: $light;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    color: $light;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: rgba($light, 0.9);
+    margin: 1rem 0 1.5rem;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Hero section
+.hero-section {
+  text-align: center;
+  padding: 2rem 0;
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .cta-button {
+      display: inline-block;
+      background: rgba($light, 0.1);
+      color: $light;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, background-color 0.2s;
+      backdrop-filter: blur(5px);
+
+      &:hover {
+        background: rgba($light, 0.2);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Component cards
+.component-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+
+  .component-card {
+    background: rgba($light, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.2s;
+    backdrop-filter: blur(10px);
+
+    &:hover {
+      transform: translateY(-4px);
+      background: rgba($light, 0.15);
+    }
+
+    h3 {
+      color: $light;
+      font-size: 1.25rem;
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: rgba($light, 0.8);
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: rgba($dark, 0.3);
+  padding: 2rem 0;
+  backdrop-filter: blur(10px);
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-copyright {
+    color: rgba($light, 0.7);
+    font-size: 0.875rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: rgba($light, 0.7);
+      text-decoration: none;
+      font-size: 0.875rem;
+      
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 0;
+
+    .navbar-logo {
+      height: 32px;
+    }
+
+    .navbar-links {
+      gap: 1rem;
+    }
+  }
+
+  .main-content {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+} 
