@@ -5,6 +5,7 @@ _site/
 .jekyll-metadata
 .bundle/
 vendor/
+node_modules/
 
 # Ruby environment
 .ruby-version
@@ -25,4 +26,9 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
-*~ 
+*~
+
+# Local development
+.env
+.env.*
+*.log 

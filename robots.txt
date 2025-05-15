@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /
 
 # Temporarily block all search engines until the site is ready
 # Remove these lines when you're ready to be indexed

@@ -14,7 +14,25 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # Theme settings
-show_downloads: true
+show_downloads: false
+
+# SEO settings
+twitter:
+  username: capsailer
+  card: summary
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/
+  - .github/
+  - .gitignore
+  - README.md
+  - LICENSE
  

@@ -1,6 +1,6 @@
 # Capsailer Website
 
-This is the official website for Capsailer, a CLI tool for delivering Kubernetes applications to air-gapped environments. The site is built with Jekyll and hosted on GitHub Pages.
+This repository contains the source code for the [capsailer.dev](https://capsailer.dev) website.
 
 ## About Capsailer
 
@@ -11,26 +11,43 @@ Capsailer is a CLI tool for delivering Kubernetes applications into air-gapped (
 
 ## Local Development
 
-1. Install Ruby and Bundler
-2. Clone this repository
-3. Run `bundle install` to install dependencies
-4. Run `bundle exec jekyll serve` to start the local server
-5. Visit `http://localhost:4000` to view the site
+This website is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
-## Structure
+### Prerequisites
 
-- `index.md` - Homepage content
-- `_layouts/` - HTML templates
-- `assets/` - CSS, images, and other static files
-- `_config.yml` - Jekyll configuration
+- Ruby (version 2.5.0 or higher)
+- RubyGems
+- GCC and Make
+
+### Setup
+
+1. Install Jekyll and Bundler:
+   ```
+   gem install jekyll bundler
+   ```
+
+2. Clone this repository:
+   ```
+   git clone https://github.com/capsailer/capsailer.github.io.git
+   cd capsailer.github.io
+   ```
+
+3. Install dependencies:
+   ```
+   bundle install
+   ```
+
+4. Start the local server:
+   ```
+   bundle exec jekyll serve
+   ```
+
+5. Open your browser to `http://localhost:4000`
 
 ## Contributing
 
-1. Fork the repository
-2. Create a new branch for your changes
-3. Make your changes
-4. Submit a pull request
+Contributions to improve the website are welcome! Please feel free to submit a pull request.
 
 ## License
 
-This website is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for details. 
+This project is licensed under the MIT License - see the LICENSE file for details. 
