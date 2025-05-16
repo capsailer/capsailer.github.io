@@ -56,5 +56,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleDownload() {
+        const button = document.querySelector('.download-button');
+        const dropdown = document.querySelector('.download-dropdown');
+        
+        button.classList.toggle('active');
+        dropdown.classList.toggle('show');
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!button.contains(event.target)) {
+            button.classList.remove('active');
+            dropdown.classList.remove('show');
+          }
+        });
+      }
+    </script>
   </body>
 </html> 
